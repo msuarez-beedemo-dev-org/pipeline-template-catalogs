@@ -1,24 +1,13 @@
-version: 1
+name: A Multibranch Template with Orphaned Items
 type: pipeline-template
-name: Java App Multibranch Pipeline
 templateType: MULTIBRANCH
-description: Java and Cucumber
 parameters:
-  - name: repoOwner
+  - name: repoUrl
     type: string
-    displayName: Repository Owner
-  - name: npmPackages
-    type: string
-    displayName: Default NPM Packages
-    defaultValue: express pug
-  - name: githubCredentialId
-    displayName: GitHub Credential ID
-    type: CREDENTIALS
-    defaultValue: cbdays-github-token
+    displayName: Repo
 multibranch:
   branchSource:
-    github:
-      id: helloworld-nodejs
-      credentialsId: ${githubCredentialId}
-      repoOwner: ${repoOwner}
-      repository: 'helloworld-nodejs'
+    git:
+      remote: ${repoUrl}
+  orphanedItemStrategy:
+    daysToKeep: 3 
