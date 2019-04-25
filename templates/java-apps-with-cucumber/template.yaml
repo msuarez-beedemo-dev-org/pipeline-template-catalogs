@@ -3,6 +3,10 @@ type: pipeline-template
 
 name: Java Maven Cucumber App Pipeline Job
 description: Simple Java App With Maven and Cucumber
+multibranch:
+  branchSource:
+    git:
+      remote: https://github.com/mluyo3414org/cucumber-java-skeleton.git
 parameters:
   - name: cucumberTag
     type: string
