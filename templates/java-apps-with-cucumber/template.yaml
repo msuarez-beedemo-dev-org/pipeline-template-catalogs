@@ -1,6 +1,6 @@
 version: 1
 type: pipeline-template
-
+templateType: multibranch
 name: Java Maven Cucumber App Pipeline Job
 description: Simple Java App With Maven and Cucumber
 parameters:
