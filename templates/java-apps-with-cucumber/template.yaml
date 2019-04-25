@@ -1,12 +1,7 @@
-version: 1
+name: A Multibranch Template with Orphaned Items
 type: pipeline-template
 templateType: multibranch
-name: Java Maven Cucumber App Pipeline Job
-description: Simple Java App With Maven and Cucumber
 parameters:
-  - name: cucumberTag
-    type: string
-    displayName: Cucumber Tag
   - name: repoUrl
     type: string
     displayName: Repo
@@ -14,3 +9,5 @@ multibranch:
   branchSource:
     git:
       remote: ${repoUrl}
+  orphanedItemStrategy:
+    daysToKeep: 3
