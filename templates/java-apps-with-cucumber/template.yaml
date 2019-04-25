@@ -1,6 +1,6 @@
 name: A Multibranch Template with Orphaned Items
 type: pipeline-template
-templateType: multibranch
+templateType: MULTIBRANCH
 parameters:
   - name: repoUrl
     type: string
