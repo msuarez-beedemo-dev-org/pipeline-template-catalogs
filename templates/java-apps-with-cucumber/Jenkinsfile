@@ -10,7 +10,7 @@ pipeline {
 
       steps {
      container('maven') {
-       echo "$cucumber_tag"
+       echo "${cucumber_tag}"
         sh "mvn test"
         }
       }
