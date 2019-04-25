@@ -1,0 +1,19 @@
+pipeline {
+  agent {
+    kubernetes
+    {
+    label 'java-app'
+    }
+   }
+  stages {
+    stage('Test') {
+
+      steps {
+     container('maven') {
+       echo "$cucumber_tag"
+        sh "mvn test"
+        }
+      }
+    }
+  }
+}

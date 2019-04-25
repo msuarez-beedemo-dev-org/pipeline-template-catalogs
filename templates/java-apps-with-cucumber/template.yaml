@@ -1,0 +1,9 @@
+version: 1
+type: pipeline-template
+
+name: Java Maven Cucumber App Pipeline Job
+description: Simple Java App With Maven and Cucumber
+parameters:
+  - name: cucumberTag
+    type: string
+    displayName: Cucumber Tag
