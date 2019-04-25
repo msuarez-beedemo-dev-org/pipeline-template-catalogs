@@ -1,7 +1,8 @@
 name: A Multibranch Template with Orphaned Items
+version: 1
 type: pipeline-template
 templateType: MULTIBRANCH
-parameters:
+iparameters:
   - name: repoUrl
     type: string
     displayName: Repo
