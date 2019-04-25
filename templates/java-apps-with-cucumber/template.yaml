@@ -7,7 +7,7 @@ parameters:
   - name: cucumberTag
     type: string
     displayName: Cucumber Tag
-  - name: repo
+  - name: repoUrl
     type: string
     displayName: Repo
 multibranch:
