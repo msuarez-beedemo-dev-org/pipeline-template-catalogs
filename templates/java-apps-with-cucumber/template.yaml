@@ -1,3 +1,4 @@
+version: 1
 name: A Multibranch Template with Orphaned Items
 type: pipeline-template
 templateType: MULTIBRANCH
